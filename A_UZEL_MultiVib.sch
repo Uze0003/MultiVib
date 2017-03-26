@@ -1,0 +1,239 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:2n4401
+LIBS:A_UZEL_MultiVib-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "A_UZEL_MultiVib_Homework"
+Date "2017-03-16"
+Rev "1.0"
+Comp "Abdurrahman UZEL"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D1
+U 1 1 58C9B6C8
+P 4500 1700
+F 0 "D1" H 4500 1800 50  0000 C CNN
+F 1 "LED" H 4500 1600 50  0000 C CNN
+F 2 "" H 4500 1700 50  0000 C CNN
+F 3 "" H 4500 1700 50  0000 C CNN
+	1    4500 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 58C9BF7B
+P 6550 1700
+F 0 "D2" H 6550 1800 50  0000 C CNN
+F 1 "LED" H 6550 1600 50  0000 C CNN
+F 2 "" H 6550 1700 50  0000 C CNN
+F 3 "" H 6550 1700 50  0000 C CNN
+	1    6550 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 58C9C09E
+P 4800 3350
+F 0 "C1" H 4825 3450 50  0000 L CNN
+F 1 "47uF" H 4825 3250 50  0000 L CNN
+F 2 "" H 4800 3350 50  0000 C CNN
+F 3 "" H 4800 3350 50  0000 C CNN
+	1    4800 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 58C9C54B
+P 6200 3300
+F 0 "C2" H 6225 3400 50  0000 L CNN
+F 1 "47uF" H 6225 3200 50  0000 L CNN
+F 2 "" H 6200 3300 50  0000 C CNN
+F 3 "" H 6200 3300 50  0000 C CNN
+	1    6200 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 58C9C762
+P 2850 3250
+F 0 "BT1" H 2950 3350 50  0000 L CNN
+F 1 "9V" H 2950 3250 50  0000 L CNN
+F 2 "" V 2850 3310 50  0000 C CNN
+F 3 "" V 2850 3310 50  0000 C CNN
+	1    2850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58C9CC1E
+P 4500 2450
+F 0 "R1" V 4580 2450 50  0000 C CNN
+F 1 "470R" V 4500 2450 50  0000 C CNN
+F 2 "" V 4430 2450 50  0000 C CNN
+F 3 "" H 4500 2450 50  0000 C CNN
+	1    4500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58C9CCCC
+P 5150 2450
+F 0 "R2" V 5230 2450 50  0000 C CNN
+F 1 "47K" V 5150 2450 50  0000 C CNN
+F 2 "" V 5080 2450 50  0000 C CNN
+F 3 "" H 5150 2450 50  0000 C CNN
+	1    5150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58C9CD0B
+P 5850 2450
+F 0 "R3" V 5930 2450 50  0000 C CNN
+F 1 "47K" V 5850 2450 50  0000 C CNN
+F 2 "" V 5780 2450 50  0000 C CNN
+F 3 "" H 5850 2450 50  0000 C CNN
+	1    5850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58C9CD78
+P 6550 2450
+F 0 "R4" V 6630 2450 50  0000 C CNN
+F 1 "470R" V 6550 2450 50  0000 C CNN
+F 2 "" V 6480 2450 50  0000 C CNN
+F 3 "" H 6550 2450 50  0000 C CNN
+	1    6550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N4401 UT1
+U 1 1 58D865CC
+P 4400 4600
+F 0 "UT1" H 4750 4900 60  0000 C CNN
+F 1 "2N4401" H 4000 4900 60  0000 C CNN
+F 2 "" H 4400 4600 60  0001 C CNN
+F 3 "" H 4400 4600 60  0001 C CNN
+	1    4400 4600
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4500 2300 4500 1850
+Wire Wire Line
+	4300 3350 4650 3350
+Wire Wire Line
+	5150 2600 5150 5150
+Wire Wire Line
+	5150 3350 4950 3350
+Wire Wire Line
+	5850 2600 5850 4750
+Wire Wire Line
+	5850 3300 6050 3300
+Wire Wire Line
+	6550 3300 6350 3300
+Connection ~ 5150 3350
+Connection ~ 5850 3300
+Wire Wire Line
+	2850 3050 2850 1200
+Wire Wire Line
+	2850 1200 6550 1200
+Wire Wire Line
+	6550 1200 6550 1550
+Wire Wire Line
+	4500 1200 4500 1550
+Connection ~ 4500 1200
+Wire Wire Line
+	5150 2300 5150 1200
+Connection ~ 5150 1200
+Wire Wire Line
+	5850 2300 5850 1200
+Connection ~ 5850 1200
+Wire Wire Line
+	6550 2300 6550 1850
+Connection ~ 4500 3350
+Connection ~ 6550 3300
+Wire Wire Line
+	2850 5600 7400 5600
+Wire Wire Line
+	2850 5600 2850 3450
+Connection ~ 4350 5600
+Wire Wire Line
+	4400 5600 4350 5600
+Wire Wire Line
+	4500 4200 4950 4200
+Wire Wire Line
+	4950 4200 4950 4750
+Wire Wire Line
+	4950 4750 5850 4750
+Wire Wire Line
+	4300 3350 4300 4400
+Wire Wire Line
+	4500 2600 4500 3350
+$Comp
+L 2N4401 UT2
+U 1 1 58D87142
+P 6550 5050
+F 0 "UT2" H 6900 5350 60  0000 C CNN
+F 1 "2N4401" H 6150 5350 60  0000 C CNN
+F 2 "" H 6550 5050 60  0001 C CNN
+F 3 "" H 6550 5050 60  0001 C CNN
+	1    6550 5050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7400 5600 7400 5050
+Wire Wire Line
+	7400 5050 6750 5050
+Wire Wire Line
+	5150 5150 6350 5150
+Wire Wire Line
+	6150 4950 6150 4050
+Wire Wire Line
+	6150 4050 6550 4050
+Wire Wire Line
+	6550 4050 6550 2600
+Wire Wire Line
+	4400 4800 4400 5600
+Connection ~ 4400 5600
+Wire Wire Line
+	4500 4200 4500 4400
+Wire Wire Line
+	6150 4950 6350 4950
+$EndSCHEMATC
